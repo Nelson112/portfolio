@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>my_portfolio</title>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      background-image: url("/home/bootcamp/projects/portfolio/outdoor-07.jpg");
+      background-position: center;
+      background-repeat: repeat-y;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e89a09;
+      font-size: 3em;
+    }
+
+    h2 {
+      text-align: center;
+      color: #e89a09;
+      font-size: 2em;
+    }
+
+    p {
+      color: #e89a09;
+      font-size: 30px;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover,
+    .offcanvas a:focus {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Nelson Mgengwana</h1>
+  <h2>Portfolio</h2>
+  <br>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="about.html">About</a>
+    <a><mark>Front-End Basics</mark></a>
+      <div class="dropdown-content">
+        <a href="https://nelson112.github.io/">Basic Webpage</a>
+        <a href="https://nelson112.github.io/bootcamp-tests">Bootcamp_Tests</a>
+        <a href="https://nelson112.github.io/greetings">Greetings</a>
+        <a href="https://nelson112.github.io/registration_numbers">Registration</a>
+        <a href="https://nelson112.github.io/matching_days">Matching Days</a>
+        <a href="https://nelson112.github.io/shoe_catalogue">Shoe Catalogue</a>
+        <a href="https://nelson112.github.io/my-screen">My Screen</a>
+      </div>
+    <a><mark>Back-End Basics</mark></a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div id="main">
+
+    <p>Click on the element below to get Portfolio menu</p>
+    <span style="font-size:30px;cursor:pointer;color: #e89a09;" onclick="openNav()">&#9776;</span>
+  </div>
+  <script src="portfolio.js">
+  </script>
+</body>
+
+</html>
